@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #1A0b2e;
+    position: relative;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    container-type: inline-size;
+    container-name: header;
+}
+.gradient {
+    background-image: url(../images/jobs5.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    height: 408px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.header__title {
+    margin: 0;
+    color: #FFFFFF;
+    font-size:18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+.header__container {
+    max-width: 1172px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+@container header (min-width: 800px) {
+    .header__title {
+        font-size: clamp(18px, 2cqw, 30px)
+        justify-content: flex-start;
+    }
+    .header__title::before {
+        width: 51px;
+        height: 36px;
+    }
+    .header__title::after {
+        display: none;
+    }
+}
+section {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+  }
