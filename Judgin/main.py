@@ -26,6 +26,10 @@ def report():
     return redirect('/')
   return render_template('report.html', searchBy = keyword, results_number = len(jobs), jobs = jobs)
 
+@app.route('/about_us')
+def info():
+  return render_template('about_us.html')
+
 @app.route('/export')
 def export():
   try:

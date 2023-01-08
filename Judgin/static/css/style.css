@@ -3,8 +3,13 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     background-color: #f4f4f4;
-}
+    color: #eee;
+    font-size: 14px;
+    line-height: 1.5;
+    background: url(../images/bg.jpg);
 
+}
+/* HEADER */
 .header {
     background-color: #1A0b2e;
     position: relative;
@@ -13,21 +18,20 @@ body {
     container-type: inline-size;
     container-name: header;
 }
-.gradient {
-    background-image: url(../images/jobs5.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 500px;
-    height: 408px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
+
 .header__title {
+    margin: 0;
+    color: #FFFFFF;
+    font-size:24px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+.header__subtitle {
     margin: 0;
     color: #FFFFFF;
     font-size:18px;
@@ -58,8 +62,61 @@ body {
         display: none;
     }
 }
-section {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(6, 1fr);
-  }
+
+header h1 {
+    margin: 0;
+    color: #0a0000;
+    font-size:30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+}  
+/* class nav */
+.nav {
+    text-align: center;
+}
+.nav-link {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #faf9f9;
+}
+.nav-link:hover {
+    background-color: #1A0b2e;
+}
+/* Form */
+.form {
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+}
+.form-input {
+    padding: 5px;
+    border: 1px solid rgb(122, 197, 240);
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.form-button {
+    padding: 5px 10px;
+    border: 1px solid rgb(122, 197, 240);
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.form-button:hover {
+    background-color:rgb(122, 197, 240);
+    cursor: pointer;
+}
+/* about us */
+h1 {
+    padding: 5px 10px;
+    font-size: 24px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.text_we {
+    display: flex;
+}
