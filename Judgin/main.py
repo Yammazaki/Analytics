@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, send_file
+from flask import Flask, render_template, request, redirect, send_file, url_for
 from parser import get_jobs
 from exporter import save_to_csv
 
@@ -28,7 +28,8 @@ def report():
 
 @app.route('/about_us')
 def info():
-  return render_template('about_us.html')
+  # return render_template('about_us.html')
+  return redirect(url_for('about_us.html')) 
 
 @app.route('/export')
 def export():

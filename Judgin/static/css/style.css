@@ -4,7 +4,6 @@ body {
     font-family: 'Noto Sans', sans-serif;
     background-color: #f4f4f4;
     color: #eee;
-    font-size: 14px;
     line-height: 1.5;
     background: url(../images/bg.jpg);
 
@@ -12,9 +11,9 @@ body {
 /* HEADER */
 .header {
     background-color: #1A0b2e;
-    position: relative;
     padding-top: 28px;
     padding-bottom: 28px;
+    text-align: center;
     container-type: inline-size;
     container-name: header;
 }
@@ -24,58 +23,43 @@ body {
     color: #FFFFFF;
     font-size:24px;
     font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
 }
 .header__subtitle {
-    margin: 0;
     color: #FFFFFF;
     font-size:18px;
     font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
 }
 .header__container {
     max-width: 1172px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin: 0 auto;
 }
 @container header (min-width: 800px) {
     .header__title {
         font-size: clamp(18px, 2cqw, 30px)
-        justify-content: flex-start;
     }
-    .header__title::before {
+    /* .header__title::before {
         width: 51px;
         height: 36px;
     }
     .header__title::after {
         display: none;
-    }
+    } */
 }
 
-header h1 {
-    margin: 0;
-    color: #0a0000;
+.search h1 {
+    color: #ffffff;
     font-size:30px;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
+} 
+.search {
+    text-align: center;
+    margin-top: 250px;
+}
+.result_color {
+    color: white;
 
-}  
+}
 /* class nav */
 .nav {
     text-align: center;
@@ -85,6 +69,7 @@ header h1 {
     padding: 8px 12px;
     text-decoration: none;
     color: #faf9f9;
+    font-size: 20px;
 }
 .nav-link:hover {
     background-color: #1A0b2e;
@@ -92,8 +77,8 @@ header h1 {
 /* Form */
 .form {
     width: 500px;
-    padding: 20px;
-    margin: auto;
+    /* padding: 20px;
+    margin: auto; */
 }
 .form-input {
     padding: 5px;
