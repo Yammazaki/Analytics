@@ -3,8 +3,100 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     background-color: #f4f4f4;
-    color: #eee;
-    line-height: 1.5;
-    background: url(../images/bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #05021a;
+}
 
+.nav {
+    text-align: center;
+    justify-content: center;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #faf9f9;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    background-color: #1A0b2e;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: %;
+}
+
+.informBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.symbol {
+    border: 1px solid #716d8f;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.symbol img {
+    max-width: 90px;
+}
+
+.point {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: fixed;
+    background: #6bb5fb;
+}
+
+.point1 {
+    margin-top: -128px;
+}
+
+.point2 {
+    margin-top: 128px;
+}
+
+.point3 {
+    margin-left: -128px;
+}
+
+.point4 {
+    margin-left: 128px;
+}
+
+.informText {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.mainText {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 25px 0 10px 0;
+}
+
+.secondText {
+    color: #fff;
+    font-size: 15px;
+    margin: 0;
 }
